@@ -1,0 +1,646 @@
+[
+  {
+    "model": "categorys.category",
+    "pk": "1",
+    "fields": {
+      "name": "パソコン・周辺機器"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "2",
+    "fields": {
+      "name": "パソコンソフトウェア"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "3",
+    "fields": {
+      "name": "プロバイダ・回線接続"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "4",
+    "fields": {
+      "name": "ネットサービス"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "5",
+    "fields": {
+      "name": "スマートフォンアプリ"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "6",
+    "fields": {
+      "name": "サーバ・周辺機器"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "7",
+    "fields": {
+      "name": "ネットワーク・ネットワーク機器"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "8",
+    "fields": {
+      "name": "アプリケーション・セキュリティ"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "9",
+    "fields": {
+      "name": "システム・Webサイト・アプリ開発"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "10",
+    "fields": {
+      "name": "百貨店・スーパー・コンビニ・ストア"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "11",
+    "fields": {
+      "name": "EC・通販"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "12",
+    "fields": {
+      "name": "卸売・問屋"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "13",
+    "fields": {
+      "name": "芸能"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "14",
+    "fields": {
+      "name": "映画・演劇・DVD"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "15",
+    "fields": {
+      "name": "音楽"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "16",
+    "fields": {
+      "name": "テレビ・CM"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "17",
+    "fields": {
+      "name": "スポーツ"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "18",
+    "fields": {
+      "name": "アウトドア・登山"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "19",
+    "fields": {
+      "name": "雑誌・本・出版物"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "20",
+    "fields": {
+      "name": "漫画・アニメ"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "21",
+    "fields": {
+      "name": "アート・カルチャー"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "22",
+    "fields": {
+      "name": "コンシューマーゲーム"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "23",
+    "fields": {
+      "name": "スマートフォンゲーム"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "24",
+    "fields": {
+      "name": "アーケードゲーム"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "25",
+    "fields": {
+      "name": "おもちゃ・遊具・人形"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "26",
+    "fields": {
+      "name": "モバイル端末"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "27",
+    "fields": {
+      "name": "カメラ"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "28",
+    "fields": {
+      "name": "AV機器"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "29",
+    "fields": {
+      "name": "調理・生活家電"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "30",
+    "fields": {
+      "name": "健康・美容家電"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "31",
+    "fields": {
+      "name": "インテリア・家具・収納"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "32",
+    "fields": {
+      "name": "日用品・生活雑貨"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "33",
+    "fields": {
+      "name": "ガーデン・DIY"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "34",
+    "fields": {
+      "name": "自動車・カー用品"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "35",
+    "fields": {
+      "name": "バイク・バイク用品"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "36",
+    "fields": {
+      "name": "レディースファッション"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "37",
+    "fields": {
+      "name": "メンズファッション"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "38",
+    "fields": {
+      "name": "シューズ・バッグ"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "39",
+    "fields": {
+      "name": "ジュエリー・アクセサリー"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "40",
+    "fields": {
+      "name": "キッズ・ベビー・マタニティ"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "41",
+    "fields": {
+      "name": "食品・お菓子"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "42",
+    "fields": {
+      "name": "ソフトドリンク・アルコール飲料"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "43",
+    "fields": {
+      "name": "レストラン・ファストフード・居酒屋"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "44",
+    "fields": {
+      "name": "中食・宅配"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "45",
+    "fields": {
+      "name": "スキンケア・化粧品・ヘア用品"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "46",
+    "fields": {
+      "name": "ダイエット・健康食品・サプリメント"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "47",
+    "fields": {
+      "name": "医療・病院"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "48",
+    "fields": {
+      "name": "医薬・製薬"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "49",
+    "fields": {
+      "name": "福祉・介護・リハビリ"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "50",
+    "fields": {
+      "name": "経営・コンサルティング"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "51",
+    "fields": {
+      "name": "シンクタンク"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "52",
+    "fields": {
+      "name": "財務・経理"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "53",
+    "fields": {
+      "name": "法務・特許・知的財産"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "54",
+    "fields": {
+      "name": "銀行・信用金庫・信用組合"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "55",
+    "fields": {
+      "name": "クレジットカード・ローン"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "56",
+    "fields": {
+      "name": "証券・FX・投資信託"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "57",
+    "fields": {
+      "name": "生命保険・損害保険"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "58",
+    "fields": {
+      "name": "広告・宣伝・PR"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "59",
+    "fields": {
+      "name": "マーケティング・リサーチ"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "60",
+    "fields": {
+      "name": "セールス・営業"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "61",
+    "fields": {
+      "name": "就職・転職・人材派遣・アルバイト"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "62",
+    "fields": {
+      "name": "資格・留学・語学"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "63",
+    "fields": {
+      "name": "学校・大学"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "64",
+    "fields": {
+      "name": "学習塾・予備校・通信教育"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "65",
+    "fields": {
+      "name": "保育・幼児教育"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "66",
+    "fields": {
+      "name": "ホテル・旅館"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "67",
+    "fields": {
+      "name": "旅行・観光"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "68",
+    "fields": {
+      "name": "テーマパーク・遊園地"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "69",
+    "fields": {
+      "name": "住宅・マンション"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "70",
+    "fields": {
+      "name": "商業施設・オフィスビル"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "71",
+    "fields": {
+      "name": "建築・空間デザイン"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "72",
+    "fields": {
+      "name": "建設・土木"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "73",
+    "fields": {
+      "name": "鉄鋼・金属・ガラス・土石・ゴム"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "74",
+    "fields": {
+      "name": "化学"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "75",
+    "fields": {
+      "name": "電気・ガス・資源・エネルギー"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "76",
+    "fields": {
+      "name": "交通・運送・引越し"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "77",
+    "fields": {
+      "name": "物流・倉庫・貨物"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "78",
+    "fields": {
+      "name": "自然・天気"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "79",
+    "fields": {
+      "name": "環境・エコ・リサイクル"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "80",
+    "fields": {
+      "name": "ペット・ペット用品"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "81",
+    "fields": {
+      "name": "ギフト・花"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "82",
+    "fields": {
+      "name": "恋愛・結婚"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "83",
+    "fields": {
+      "name": "出産・育児"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "84",
+    "fields": {
+      "name": "葬儀"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "85",
+    "fields": {
+      "name": "政治・官公庁・地方自治体"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "86",
+    "fields": {
+      "name": "財団法人・社団法人・宗教法人"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "87",
+    "fields": {
+      "name": "ボランティア"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "88",
+    "fields": {
+      "name": "国際情報・国際サービス"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "89",
+    "fields": {
+      "name": "農林・水産"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "90",
+    "fields": {
+      "name": "その他"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "91",
+    "fields": {
+      "name": "フィットネス・ヘルスケア"
+    }
+  },
+  {
+    "model": "categorys.category",
+    "pk": "92",
+    "fields": {
+      "name": "電子部品・半導体・電気機器"
+    }
+  }
+]
