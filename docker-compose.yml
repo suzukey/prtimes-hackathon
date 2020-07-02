@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  python:
+    container_name: python-django
+    build:
+      context: ./python
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    command: python hackathon/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./python:/usr/src/app/
