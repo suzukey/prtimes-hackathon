@@ -8,6 +8,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
-    command: python manage.py runserver 0.0.0.0:8000
+    command: "sh /usr/src/sh/django_run.sh"
     volumes:
       - ./hackathon:/usr/src/app/
+      - ./django_run.sh:/usr/src/sh/django_run.sh:ro
