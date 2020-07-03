@@ -129,3 +129,15 @@ header ul {
 .timeline-body > p + p {
   margin-top: 5px;
 }
+
+#about {
+  border: 2px solid rgba(47, 31, 189, 0.479);
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#about ul {
+  list-style: none;
+}
