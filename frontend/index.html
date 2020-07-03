@@ -6,9 +6,13 @@
   <style>
 
 
-    header ul{
+header ul{
       list-style:none;
     }
+
+
+
+
   .timeline {
   list-style: none;
   padding: 20px 0 20px;
@@ -68,13 +72,10 @@
   
 }
 
-#card{
-  width:300px;
-  height:auto;
-  overflow: hidden;
-  border-radius:6px;
-  
-}
+
+
+
+
 
 
 
@@ -133,10 +134,23 @@
   background-color: #5bc0de !important;
 }
 
+#card{
+  width:300px;
+  height:auto;
+  overflow: hidden;
+  border-radius:6px;
+  
+}
+
+
 .timeline-title {
   margin-top: 0;
   color: inherit;
 }
+
+
+
+
 
 .timeline-body > p,
 .timeline-body > ul {
@@ -146,6 +160,10 @@
 .timeline-body > p + p {
   margin-top: 5px;
 }
+
+
+
+
 
 #about{
   border:2px solid rgba(47, 31, 189, 0.479);
@@ -159,32 +177,45 @@
 #about ul{
   list-style:none;
 }
-  </style>
+</style>
+
 </head>
 <body>
 <header class="bg-primary">
+
 <ul class="d-md-flex">
-<h3 class="m-2 px-3 font-weight-bold text-white">PR TIMES</h3> 
+
+<h3 class="m-2 px-3 font-weight-bold text-white">PR TIMES</h3>
+
 <li class="m-1">
+
   <div class="input-group">
-	<input type="text" class="form-control" placeholder="キーワード検索">
-	<span class="input-group-btn">
-		<input type="button" class="btn btn-default bg-info text-white" value="search">
-	</span>
-</div>
+  	<input type="text" class="form-control" placeholder="キーワード検索">
+	  <span class="input-group-btn">
+		 <input type="button" class="btn btn-default bg-info text-white" value="search">
+	  </span>
+  </div>
 
 </li>
 </ul>
+
 </header>
-  <div class="container">
+
+<div class="container">
     <h1 class="text-center">Business </h1>
+
     <div class="page-header">
       <h1 id="timeline">Timeline</h1>
-    </div>
+    </div><!--/page-header-->
+
     <ul class="timeline">
-     
+      <!--以下2017-->
       <li>
-        <div class="timeline-badge"><i class="glyphicon glyphicon-check"><a href="#" class="text-white">2017</a></i></div>
+        <div class="timeline-badge">
+          <i class="glyphicon glyphicon-check">
+            <a href="#" class="text-white">2017</a>
+          </i>
+        </div><!--/timeline-badge-->
         <div class="timeline-panel">
           
 
@@ -194,17 +225,19 @@
              <img src="image/IMG_4012.jpg"> 
              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
               <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-            </div>
+            </div><!--/timeline-body-->
   
-            </div>
+          </div><!--/card-->
          
-        </div>
+        </div><!--timeline-panel-->
       </li>
+
       <li class="timeline-inverted">
        
         <div class="timeline-panel">
          
           <a href="#" class="text-dark">
+
           <div id="card" class="border-rounded">
          
             <div class="timeline-body">
@@ -212,14 +245,16 @@
              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
               <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
               <a href="#">2017年の活動をもっと見る</a>
-            </div>
+            </div><!--/timeline-body-->
             
-            </div>
+            </div><!--/card-->
           
            </a>
-        </div>
+
+        </div><!--timeline-panel-->
        
       </li>
+      <!--以下2018-->
       <li>
         
         <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card">2018</i></div>
@@ -258,9 +293,16 @@
         </div><!--timeline-panel-->
       </li>
       <li>
-        <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"><a href="#" class="text-white">2019</a></i></div>
+        <div class="timeline-badge info">
+          <i class="glyphicon glyphicon-floppy-disk">
+            <a href="#" class="text-white">2019</a>
+          </i>
+        </div><!--timeline-badge-->
+
         <div class="timeline-panel">
+
          <a href="#" class="text-dark">
+
           <div id="card" class="border-rounded">
          
             <div class="timeline-body">
@@ -268,27 +310,12 @@
              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
               <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
               <a href="#">2019年の活動をもっと見る</a>
-            </div>
+            </div> <!--/timeline-body-->
   
-          </div>
-            </a>
+           </div><!--/card-->
+            </a>   
+
            
-             
-
-               
-              
-             
-
-                
-                 
-
-                  
-                  
-                 
-                 
-              
-
-            </div>
 
             <div><!--timeline-panel-->
 
@@ -305,17 +332,28 @@
           <div id="card" class="border-rounded">
          
           <div class="timeline-body">
+
            <img src="image/IMG_4012.jpg"> 
            <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
             <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-          </div>
 
-          </div>
+          </div><!--/timeline-body-->
+
+          </div><!--/card-->
           
-        </div><!--timeline-panel2-->
+        </div><!--/timeline-panel2-->
+
       </li>
+
+
       <li class="timeline-inverted2">
-        <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"><a href="#" class="text-white">2020</a></i></div>
+
+        <div class="timeline-badge success">
+          <i class="glyphicon glyphicon-thumbs-up">
+            <a href="#" class="text-white">2020</a>
+          </i>
+        </div><!--/timeline-badge-->
+
         <div class="timeline-panel2">
           
           <a href="#" class="text-dark">
@@ -326,26 +364,22 @@
              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
               <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
               <a href="#">2020年の活動をもっと見る</a>
-            </div>
+            </div><!--/timeline-body-->
         
-            </div>
+            </div><!--/card-->
           </a>
-          
-          
-          
-     
-          
-        
 
-        </div><!--timelene-panel2-->
+        </div><!--/timelene-panel2-->
        
       </li>
+
     </ul>
-  </div>
+  </div><!--/container-->
 
 
 
   <div class="container" id="about">
+
   <div class= "m-auto">
     <ul>
       <h4 class="text-center mr-5 my-4 font-weight-bold">会社概要</h4>
@@ -368,7 +402,9 @@
       <strong>所在地</strong>
       　　　東京都すごい市×××××××××
     </li>
-<a href="#" class="  border-rounded p-3 m-2 bg-primary text-white ml-2 font-weight-bold">この企業のホームページをみる</a>
+
+    <a href="#" class="  border-rounded p-3 m-2 bg-primary text-white ml-2 font-weight-bold">この企業のホームページをみる</a>
+
     </ul>
     
 
@@ -376,9 +412,9 @@
 
 
 
-  </div>
+  </div><!--/m-auto-->
 
-  </div>
+  </div><!--/about-->
 
 
 
