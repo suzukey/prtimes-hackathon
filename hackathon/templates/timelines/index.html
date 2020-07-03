@@ -10,187 +10,90 @@
   <body>
     <header class="bg-primary">
       <ul class="d-md-flex">
-        <h3 class="m-2 px-3 font-weight-bold text-white">PR TIMELINE</h3> 
+        <h3 class="m-2 px-3 font-weight-bold text-white">PR TIMELINE</h3>
         <li class="m-1">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="キーワード検索">
-            <span class="input-group-btn">
-            <input type="button" class="btn btn-default bg-info text-white" value="search">
-            </span>
-          </div>
+          <form method="GET" action="/companys/search/">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                name="q"
+                placeholder="キーワード検索"
+              />
+              <span class="input-group-btn">
+                <input
+                  type="submit"
+                  class="btn btn-default bg-info text-white"
+                  value="search"
+                />
+              </span>
+            </div>
+          </form>
         </li>
       </ul>
     </header>
     <div class="container">
-      <h1 class="text-center">Business </h1>
+      <h1 class="text-center">Business</h1>
       <div class="page-header">
         <h1 id="timeline">Timeline</h1>
       </div>
       <ul class="timeline">
-        <li>
-          <div class="timeline-badge"><i class="glyphicon glyphicon-check"><a href="#" class="text-white">2017</a></i></div>
-          <div class="timeline-panel">
-            <div id="card" class="border-rounded">
-              <div class="timeline-body">
-              <img src="image/IMG_4012.jpg"> 
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-              </div>
-              </div>
+        {% for year_data in data %} {% for value in year_data.data %}
+        <li class="timeline-inverted{{forloop.counter2}}">
+          {% if forloop.first %}
+          <div class="timeline-badge">
+            <i class="glyphicon glyphicon-check"
+              ><a href="#" class="text-white">{{year_data.year}}</a></i
+            >
           </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-            <a href="#" class="text-dark">
-            <div id="card" class="border-rounded">
-              <div class="timeline-body">
-              <img src="image/IMG_4012.jpg"> 
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-                <a href="#">2017年の活動をもっと見る</a>
-              </div>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card">2018</i></div>
-          <div class="timeline-panel2">
-            <div class="timeline-heading">
-            </div>
-            <div id="card" class="border-rounded">
-              <div class="timeline-body">
-              <img src="image/IMG_4012.jpg"> 
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-              </div>
-              </div>
-          </div>
-        </li>
-        <li class="timeline-inverted2">
+          {% endif %}
           <div class="timeline-panel">
             <div id="card" class="border-rounded">
               <div class="timeline-body">
-              <img src="image/IMG_4012.jpg"> 
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-              </div>
-              </div>
-          </div><!--timeline-panel-->
-        </li>
-        <li>
-          <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"><a href="#" class="text-white">2019</a></i></div>
-          <div class="timeline-panel">
-          <a href="#" class="text-dark">
-            <div id="card" class="border-rounded">
-              <div class="timeline-body">
-              <img src="image/IMG_4012.jpg"> 
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-                <a href="#">2019年の活動をもっと見る</a>
+                <img src="{{ value.main_image }}" />
+                <h4 class="timeline-title">{{ value.title }}</h4>
+                <p id="card-text">{{ value.head }}</p>
+                {% if forloop.last %}
+                <a href="{{year_data.year}}">
+                  {{ year_data.year }} 年の活動をもっと見る</a
+                >
+                {% endif %}
               </div>
             </div>
-              </a>
-              </div>
-              <div><!--timeline-panel-->
+          </div>
         </li>
+        {% endfor %} {% endfor %}
+      </ul>
+    </div>
 
-        <!--以下2020-->
-        <li>
-          <div class="timeline-panel2">
-            <div id="card" class="border-rounded">
-            <div class="timeline-body">
-            <img src="image/IMG_4012.jpg"> 
-            <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-            <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-            <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-            <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-              <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-            </div>
-            </div>
-          </div><!--timeline-panel2-->
-        </li>
-        <li class="timeline-inverted2">
-          <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"><a href="#" class="text-white">2020</a></i></div>
-            <div class="timeline-panel2">
-              <a href="#" class="text-dark">
-                <div id="card">
-                  <div class="timeline-body">
-                    <img src="image/IMG_4012.jpg"> 
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
-                    <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-                    <a href="#">2020年の活動をもっと見る</a>
-                  </div>
-                </div>
-              </a>
-            </div><!--timelene-panel2-->
+    <div class="container" id="about">
+      <div class="m-auto">
+        <ul>
+          <h4 class="text-center mr-5 my-4 font-weight-bold">会社概要</h4>
+          <li class="border-bottom d-flex">
+            <strong>会社名</strong>
+            とてもすごい株式会社
           </li>
-        </ul>
-      </div>
 
-      <div class="container" id="about">
-        <div class= "m-auto">
-          <ul>
-            <h4 class="text-center mr-5 my-4 font-weight-bold">会社概要</h4>
-            <li class="border-bottom d-flex">
-              <strong>会社名</strong>
-              とてもすごい株式会社
-            </li>
+          <li class="border-bottom d-flex">
+            <strong>業種</strong>
+            とてもすごい業種
+          </li>
 
-            <li  class="border-bottom d-flex">
-              <strong>業種</strong>
-              とてもすごい業種
-            </li>
+          <li class="border-bottom d-flex">
+            <strong>電話番号</strong>
+            とてもすごい電話番号
+          </li>
 
-            <li  class="border-bottom d-flex">
-              <strong>電話番号</strong>
-              とてもすごい電話番号
-            </li>
-
-            <li class="mb-5 d-flex">
-              <strong>所在地</strong>
-              東京都すごい市×××××××××
-            </li>
-          <a href="#" class="  border-rounded p-3 m-2 bg-primary text-white ml-2 font-weight-bold">この企業のホームページをみる</a>
+          <li class="mb-5 d-flex">
+            <strong>所在地</strong>
+            東京都すごい市×××××××××
+          </li>
+          <a
+            href="#"
+            class="  border-rounded p-3 m-2 bg-primary text-white ml-2 font-weight-bold"
+            >この企業のホームページをみる</a
+          >
         </ul>
       </div>
     </div>

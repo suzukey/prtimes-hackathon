@@ -16,9 +16,11 @@ def get_search_context(request):
             Q(company_name__icontains=query_word)
         ).first()
 
+        data = detail(object.company_id)
+
         context = {
             'query': query_word,
-            'data': detail(object.company_id)
+            'data': data
         }
 
     return context
@@ -27,8 +29,12 @@ def get_search_context(request):
 def get_timeline_context(request, company_id, release_id):
     context = {}
 
-    context['data'] = get_objects(company_id, release_id)
-    # context['data'] = com_objects(company_id, release_id)
+    data = get_objects(company_id, release_id)
+    # data = com_objects(company_id, release_id)
+
+    data = times_context(data)
+
+    context['data'] = data
 
     return context
 
@@ -55,7 +61,7 @@ def get_objects(company_id, release_id):
     return data
 
 
-# 企業のプレスリリースリストすべて
+# 企業のプレスリリースリストすべて (未着手)
 def com_objects(company_id, release_id):
     url = "https://hackathon.stg-prtimes.net/detail/"
     params = {
@@ -68,5 +74,40 @@ def com_objects(company_id, release_id):
     res = requests.get(request_url, params=params)
     res_obj = json.loads(res.text)
     data = res_obj['data']
+
+    return data
+
+
+def times_context(no_time_data):
+    data = []
+
+    for ntd in no_time_data:
+        year = str(ntd['created_at'])[:4]
+
+        if year not in data:
+            data.append({
+                'year': year,
+                'data': []
+            })
+
+        for ye_d in data:
+            if year == ye_d['year']:
+                ye_d['data'].append(ntd)
+
+    return data
+
+
+def get_com_name(company_id):
+    url = "https://hackathon.stg-prtimes.net/company/"
+    params = {
+        'token': "e7zCG8N0sl5y"
+    }
+    request_url = '{}/{}'.format(
+        url, company_id
+    )
+
+    res = requests.get(request_url, params=params)
+    res_obj = json.loads(res.text)
+    data = res_obj['data']['company_name']
 
     return data

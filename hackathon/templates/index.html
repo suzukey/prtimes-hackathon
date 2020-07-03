@@ -15,11 +15,14 @@
         <h5 class="font-weight-bold text-left">
           企業の歴史やつながりを検索してみる
         </h5>
-        <input
-          type="text"
-          class="form-control w-50"
-          placeholder="企業を検索する"
-        />
+        <form method="GET" action="/companys/search">
+          <input
+            type="text"
+            name="q"
+            class="form-control w-50"
+            placeholder="企業を検索する"
+          />
+        </form>
       </div>
     </div>
   </body>

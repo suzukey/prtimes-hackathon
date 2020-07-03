@@ -12,28 +12,29 @@
       <ul class="d-md-flex">
         <h3 class="m-2 px-3 font-weight-bold text-white">PR TIMELINE</h3>
         <li class="m-1">
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="キーワード検索"
-            />
-            <span class="input-group-btn">
+          <form method="GET" action="/companys/search/">
+            <div class="input-group">
               <input
-                type="button"
-                class="btn btn-default bg-info text-white"
-                value="search"
+                type="text"
+                class="form-control"
+                name="q"
+                placeholder="キーワード検索"
               />
-            </span>
-          </div>
+              <span class="input-group-btn">
+                <input
+                  type="submit"
+                  class="btn btn-default bg-info text-white"
+                  value="search"
+                />
+              </span>
+            </div>
+          </form>
         </li>
       </ul>
     </header>
     <div class="container col-9">
       <div id="line2" class="my-3 ">
-        <h4 class="text-center ">
-          株式会社とてもすごい<small>の2020年</small>
-        </h4>
+        <h4 class="text-center ">{{com_name}}<small>の{{ year }}年</small></h4>
       </div>
 
       <section class="d-md-flex my-3">

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from timelines.views_files.get_contexts import get_search_context, get_timeline_context
+from timelines.views_files.get_contexts import get_search_context, get_timeline_context, get_com_name
 
 
 def index(request):
@@ -22,5 +22,8 @@ def timeline(request, company_id, release_id):
 
 def more(request, company_id, release_id, year):
     template = 'timelines/more.html'
-    context = get_timeline_context(request, company_id, release_id)
+    context = {
+        'year': year,
+        'com_name': get_com_name(company_id)
+    }
     return render(request, template, context)
