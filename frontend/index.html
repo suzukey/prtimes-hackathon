@@ -146,6 +146,19 @@
 .timeline-body > p + p {
   margin-top: 5px;
 }
+
+#about{
+  border:2px solid rgba(47, 31, 189, 0.479);
+  width:400px;
+  height:auto;
+  border-radius:10px;
+  padding:20px;
+ 
+}
+
+#about ul{
+  list-style:none;
+}
   </style>
 </head>
 <body>
@@ -261,9 +274,7 @@
       <li>
         <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk">2019</i></div>
         <div class="timeline-panel">
-          <div class="timeline-heading">
-           
-          </div>
+         
           <div id="card">
          
             <div class="timeline-body">
@@ -273,29 +284,42 @@
             </div>
   
           </div>
-            <div class="dropdown">
+            
             <div class="btn-group">
-              <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">2019年の活動をもっと見る</button>
-
+              <button type="button" class="btn btn-primary btn-sm " data-toggle="collapse"  data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">2019年の活動をもっと見る</button>
+            
              
 
                <!-- <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>-->
               
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
+             
 
-              
+                <div class="timeline-panel">
+                 <div class= "collapse" id="collapseExample">
+
+                  
+                  
+                  <div id="card">
+                 
+                    
+                      <div class="timeline-body">
+                    <img src="image/IMG_4012.jpg" >
+                     <h4 class="timeline-title">Mussum ipsum cacilds</h4> 
+                      <p id="card-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+                    </div>
+                  
+          
+                  </div><!--card-->
+                 
+              </div><!--/collapseexample-->
 
             </div><!--btn-group-->
 
-            </div><!--dropdown-->
+            </div><!--timeline-panel-->
+
+            
           
-        </div><!--timeline-panel-->
+       
       </li>
 
 
@@ -350,6 +374,27 @@
        
       </li>
     </ul>
+  </div>
+
+  <div class="container" id="about">
+  <div class= "m-auto">
+    <ul>
+      <h4 class="text-center mr-5 my-4 font-weight-bold">会社概要</h4>
+    <li class="border-bottom"><strong>会社名</strong>　　　とてもすごい株式会社</li>
+    <li  class="border-bottom"><strong>業種</strong>　　　　とてもすごい業種</li>
+    <li  class="border-bottom"><strong>電話番号</strong>　　とてもすごい電話番号</li>
+    <li class="mb-5"><strong>所在地</strong>
+      　　　東京都すごい市××××××××××××××××</li>
+<a href="#" class="  border-rounded p-3 m-2 bg-primary text-white ml-2 font-weight-bold">この企業のホームページをみる</a>
+    </ul>
+    
+
+
+
+
+
+  </div>
+
   </div>
 
 
