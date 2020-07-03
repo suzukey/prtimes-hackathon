@@ -36,7 +36,7 @@ def keywords(key_body):
     return prolist
 
 
-def serch(key_body, body, prolist):
+def search_relase(key_body, body, prolist):
     timebody = []
     allpro = {}
     allcom = {}

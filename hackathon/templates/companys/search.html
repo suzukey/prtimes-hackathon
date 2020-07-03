@@ -10,7 +10,7 @@
   <body>
     <header class="bg-primary">
       <ul class="d-md-flex">
-        <h3 class="m-2 px-3 font-weight-bold text-white">PR TIMES</h3>
+        <h3 class="m-2 px-3 font-weight-bold text-white">PR TIMELINE</h3>
         <li class="m-1">
           <div class="input-group">
             <input
@@ -36,7 +36,7 @@
       </h3>
 
       {% for value in data %}
-      <a href=/timelines/{{ value.company_id }}/{{ value.release_id }}">
+      <a href="/timelines/{{ value.company_id }}/{{ value.release_id }}/">
         <div id="box" class=" border border-rounded p-3 my-3">
           <h5>{{ value.title }}</h5>
           <p class="text-muted">{{ value.company_name }}</p>
