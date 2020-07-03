@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/search.css' %}" />
+  </head>
+  <body>
+    <header class="bg-primary">
+      <ul class="d-md-flex">
+        <h3 class="m-2 px-3 font-weight-bold text-white">PR TIMES</h3>
+        <li class="m-1">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="キーワード検索"
+            />
+            <span class="input-group-btn">
+              <input
+                type="button"
+                class="btn btn-default bg-info text-white"
+                value="search"
+              />
+            </span>
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <div class="container col-8 mt-5">
+      <h3 id="line">
+        {{ query }}<span class="font-weight-normal">の検索一覧</span>
+      </h3>
+
+      {% for value in data %}
+      <a href=/timelines/{{ value.company_id }}/{{ value.release_id }}">
+        <div id="box" class=" border border-rounded p-3 my-3">
+          <h5>{{ value.title }}</h5>
+          <p class="text-muted">{{ value.company_name }}</p>
+          <p class="text-muted">2020年7月3日</p>
+        </div>
+      </a>
+      {% empty %}
+      <div id="box" class=" border border-rounded p-3 my-3">
+        <h5>該当なし</h5>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+header ul {
+  list-style: none;
+}
+
+#line {
+  border-bottom: 3px solid darkblue;
+}
