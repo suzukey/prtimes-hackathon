@@ -10,7 +10,7 @@ urlpatterns = {
         views.timeline, name='timeline'
     ),
     path(
-        'timelines/<int:company_id>/<int:release_id>/more/<int:year>',
+        'timelines/<int:company_id>/<int:release_id>/<int:year>/',
         views.more, name='more'
     )
 }
