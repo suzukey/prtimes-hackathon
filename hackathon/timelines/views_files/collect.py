@@ -16,7 +16,8 @@ def keywords(key_body):
         'Company' or 'Position_Vocation' or 'Detective_Method_Other' or 'Product_Other' or 'Corporation_Other'
     )
     project = (
-        'Product_Other' or 'Magagine' or 'Broadcast_Program' or 'Occation_Other' or 'Flora' or 'Person')
+        'Product_Other' or 'Magagine' or 'Broadcast_Program' or 'Occation_Other' or 'Flora' or 'Person'
+    )
 
     prolist = []
 
@@ -30,7 +31,7 @@ def keywords(key_body):
     for ent in doc.ents:
         if ent.label_ == project:
             prolist.append(ent.text)
-        #print(ent.text, ent.start_char, ent.end_char, ent.label_)
+        # print(ent.text, ent.start_char, ent.end_char, ent.label_)
 
     return prolist
 
@@ -72,7 +73,7 @@ def serch(key_body, body, prolist):
     for k in range(l-1):
         list_3[k] = len(list_2[k])
         list_2[k] = list(dict.fromkeys(list_2[k]))
-     # 事業名 list_1[list_3.index(max)]
+    # 事業名 list_1[list_3.index(max)]
     if list_3 == []:
         tree = [key_body]
     else:
@@ -100,7 +101,7 @@ def serch(key_body, body, prolist):
         for k in range(l):
             list_6[k] = len(list_5[k])
             list_5[k] = list(dict.fromkeys(list_5[k]))
-         # 企業名 list_4[list_6.index(max)]
+        # 企業名 list_4[list_6.index(max)]
         if list_6 == []:
             tree = [key_body]
         else:
@@ -108,16 +109,16 @@ def serch(key_body, body, prolist):
             for n in range(len(list_5(list_6.index(max(list_6, default=0))))):
                 data = {
                     # body_temp["company_id"]
-                    'company_id':   body[list_2[n]]['company_id'],
+                    'company_id': body[list_2[n]]['company_id'],
                     # body_temp["release_id"]
-                    'release_id':   body[list_2[n]]['release_id'],
-                    'company_name':   body[list_2[n]]["company_name"],
-                    'title':   body[list_2[n]]["title"],
-                    'head':  body[list_2[n]]["head"],  # リード文
-                    'main_image':   body[list_2[n]]["main_image"],
-                    'created_at':   body[list_2[n]]["created_at"],
+                    'release_id': body[list_2[n]]['release_id'],
+                    'company_name': body[list_2[n]]["company_name"],
+                    'title': body[list_2[n]]["title"],
+                    'head': body[list_2[n]]["head"],  # リード文
+                    'main_image': body[list_2[n]]["main_image"],
+                    'created_at': body[list_2[n]]["created_at"],
                     'project_name': list_1[list_3.index(max(list_3, default=0))],
-                    'company_name': list_4[list_6.index(max(list_6, default=0))]
+                    'relation_names': list_4[list_6.index(max(list_6, default=0))]
                 }
                 tree.apend(data)
     return tree
